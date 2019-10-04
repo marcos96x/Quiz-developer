@@ -1,0 +1,69 @@
+body {
+    background-color: #e8eaf6;
+}
+p{
+    color: #263238;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#coluna_principal{
+    margin-top: 100px;
+}
+
+.titulo_quiz{
+    color: #5e35b1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#informacoes{
+    margin-top: 150px;
+}
+
+.btn_persona{
+    background-color: #7e57c2;
+    width: 300px;
+    height: 60px;
+}
+
+.btn_persona:hover{
+    background-color: #b39ddb;
+    width: 306px;
+    height: 63px;
+}
+
+
+.row .input-field input:focus {
+    border-bottom: 1px solid #7e57c2 !important;
+    box-shadow: 0 1px 0 0 #7e57c2 !important;
+    color: #7e57c2;
+  
+}
+
+.input-field input:focus+label {
+color: #7e57c2 !important;
+}
+
+#questoes{
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+#quiz{
+    margin-top: 200px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;;
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #5e35b1;
+}
+
+.waves-effect:click .waves-light:click{
+    background-color: #5e35b1;
+}

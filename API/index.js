@@ -1,0 +1,11 @@
+const consign = require("consign")
+const express = require("express")
+const app = express()
+
+consign()
+    .include("src/models/database.js")
+    .then("libs/config.js")
+    .then("src/controllers")
+    .then("src/routes")
+    .then("/libs/boot.js")
+    .into(app)

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/materialize.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script src="../js/materialize.js"></script>
+    <script src="../js/home.js"></script>
+    <title>Quiz</title>
+</head>
+
+<body>
+    <div class="container" id="index">
+        <div class="row" id="coluna_principal">
+            <div class="col s12 m6 l6 center-align">
+                <h1 class="rigth-align titulo_quiz">Quiz de programação</h1>
+                <img src="../img/quiz1.png" alt="Imagem do quiz" id="img_quiz">
+            </div>
+            <div class="col s12 m6 l6 center-align" id="informacoes">
+
+                <h4 class="titulo_quiz">Como funciona?</h4>
+                <p>
+                    Você terá 15 segundos para responder as questões sobre programação. São X perguntas, e quanto mais
+                    rápido acertar,
+                    mais pontos irá ganhar! Mas ao errar uma questão, você perde!
+                </p>
+                <h4 class="titulo_quiz">Por que colocar o seu nome?</h4>
+                <p>
+                    Para que seu nome e sua pontuação fique a mostra em nosso score caso você esteja entre os 10 que
+                    mais acertaram!
+                </p>
+                <div class="row">
+                    <div class="col s12">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix black-text">person</i>
+                                <input type="text" id="nome">
+                                <label for="nome">Seu nome</label>
+                            </div>
+                        </div>
+                        <button class="btn btn_persona waves-effect waves-light white-text"
+                            onclick="inicia_quiz()">Jogar!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row center-align" id="score">
+            <h2 class="titulo_quiz">Score</h2>
+            <table class="striped centered">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Hora da jogada</th>
+                        <th>Pontuação</th>
+                    </tr>
+                </thead>
+
+                <tbody id="ranking">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Quiz -->
+    <div class="container" id="quiz">
+
+        <div class="row">
+
+            <div class="z-depth-3" id="questoes">
+                <div class="row">
+                    <p id="tempo"></p>
+                    <p id="score_usuario"></p>
+                    <p>
+                        Questões:
+                        <label>
+                            <input name="group1" type="radio" disabled="disabled" checked />
+                            <span>1</span>
+                        </label>
+                        <label>
+                            <input name="group2" type="radio" disabled="disabled" />
+                            <span>2</span>
+                        </label>
+                        <label>
+                            <input name="group3" type="radio" disabled="disabled" />
+                            <span>3</span>
+                        </label>
+                        <label>
+                            <input name="group4" type="radio" disabled="disabled" />
+                            <span>4</span>
+                        </label>
+                        <label>
+                            <input name="group5" type="radio" disabled="disabled" />
+                            <span>5</span>
+                        </label>
+                        <label>
+                            <input name="group6" type="radio" disabled="disabled" />
+                            <span>6</span>
+                        </label>
+                        <label>
+                            <input name="group7" type="radio" disabled="disabled" />
+                            <span>7</span>
+                        </label>
+                        <label>
+                            <input name="group8" type="radio" disabled="disabled" />
+                            <span>8</span>
+                        </label>
+                        <label>
+                            <input name="group9" type="radio" disabled="disabled" />
+                            <span>9</span>
+                        </label>
+                        <label>
+                            <input name="group10" type="radio" disabled="disabled" />
+                            <span>10</span>
+                        </label>                        
+                    </p>
+                </div>
+                <div id="perguntas">
+                                        
+                </div>
+                <button class="btn btn_persona waves-effect waves-light white-text"
+                        onclick="escolha()">Escolher!</button>
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
